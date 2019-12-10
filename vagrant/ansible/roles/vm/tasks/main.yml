@@ -33,7 +33,7 @@
     mode: 0666
 
 - name: build vms
-  include: build.yml
+  include_tasks: build.yml
   with_items:
     - { name: 'winxp', ram: '512', packer_template: 'windows.json', packer_varfile: 'winxp.json' }
     - { name: 'win7', ram: '1024', packer_template: 'windows.json', packer_varfile: 'win7.json' }
